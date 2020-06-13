@@ -3,7 +3,7 @@ services:
   web:
     image: codex:latest
     ports:
-      - "8080:5000"
+      - "6000:5000"
   redis:
     image: redis
     volumes:
