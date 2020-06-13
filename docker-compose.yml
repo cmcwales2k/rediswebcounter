@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    image: codex:latest
+    ports:
+      - "5000:5000"
+  redis:
+    image: redis
+    volumes:
+      - ../data/redis:/data
+    entrypoint: redis-server --appendonly yes
+    restart: always
