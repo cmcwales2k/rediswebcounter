@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: codex:latest
+    image: codex:dev2
     ports:
       - "6000:5000"
   redis:
